@@ -426,7 +426,7 @@ document.querySelector("#play").onclick = ()=>{
                 rockArr[i].rockImg.style.display = "none";
                 rockArr[i].rockImg.remove();
                 rockArr.splice(i,1);
-                if(rockArr[i].className != "rock1 rock7" || rockArr[i].className != "rock1 rock8"){
+                if(rockArr[i].className != "rock1 rock7" && rockArr[i].className != "rock1 rock8"){
                   groundBlood --;
                 }
                 console.log(groundBlood);
