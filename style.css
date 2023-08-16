@@ -1,0 +1,358 @@
+ *{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+
+#wrapper{
+    background: url("./assetForAirCraft/skyBackground2.jpeg") ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
+    position: absolute;
+    cursor: url("./assetForAirCraft/cursor.png"), auto;
+}
+           
+
+#selectMode{
+    position: absolute;
+    top: 20vh;
+    height: 40vh;
+    width: 40vw;
+    left: 30vw;
+    background-color: rgb(17, 47, 146);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 2vw;
+    border-style: dotted;
+    font-weight: 500;
+    display: none;
+}
+#mode{
+    display: block;
+}
+.mode{
+    top: 8vh;
+    border-radius: 1vw;
+    display: inline-block;
+    width: 6vw;
+    height: 5vh;
+    position: absolute;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+}
+.mode:hover{
+    animation: zoomForMode 0.2s linear;
+    width: 10vw;
+    height: 8vh;
+    transform: translateX(-2vw);
+    line-height: 8vh;
+}
+@keyframes zoomForMode {
+    0%{
+        width: 6vw;
+        height: 5vh;
+        transform: translateX(0);
+        line-height: 5vh;
+
+    }
+    100%{
+        width: 10vw;
+        height: 8vh;
+        transform: translateX(-2vw);
+        
+    }
+}
+
+.mode1{
+    background-color: yellow;
+    left: 5vw;
+    color: rgb(0, 0, 0);
+}
+.mode2{
+    background-color: green;
+    left: 17vw;
+}
+.mode3{
+    background-color: rgb(231, 126, 126);
+    left: 29vw;
+}
+#play{
+    top: 20vh;
+    border-radius: 1vw;
+    width: 10vw;
+    height: 8vh;
+    position: absolute;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 8vh;
+    left: 15vw;
+    display: none;
+}
+#play:hover{
+    background-color: blue;
+}
+
+#selectPlane{
+    position: absolute;
+    top: 20vh;
+    height: 40vh;
+    width: 40vw;
+    left: 30vw;
+    background-color: rgb(17, 47, 146);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 2vw;
+    border-style: dotted;
+    font-weight: 500;
+}
+.airCraft{
+    border-style: solid;
+    height: 8vh;
+    top: 8vh;
+    border-radius: 1vw;
+    width: 5vw;
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(73, 81, 168);
+    color: rgb(131, 145, 214);
+}
+.airCraft:hover{
+    background-color: blue;
+}
+.airCraft1{
+    left: 2.5vw;
+}
+.airCraft2{
+    left: 10vw;
+}
+.airCraft3{
+    left: 17.5vw;
+}
+.airCraft4{
+    left: 25vw;
+}
+.airCraft5{
+    left: 32.5vw;
+}
+
+label{
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+}
+#ok{
+    top: 25vh;
+    border-radius: 1vw;
+    width: 10vw;
+    height: 8vh;
+    position: absolute;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 8vh;
+    left: 15vw;
+    display: none;
+}
+#ok:hover{
+    background-color: aquamarine;
+}
+@media (max-width: 1080px) {
+    #onMobile{
+        position: absolute;
+        background-color: rgb(6, 55, 84);
+        top: 50vh;
+        height: 15vh;
+        width: 80vw;
+        left: 10vw;
+        color: white;
+        font-size: 5vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        line-height: 5vh;
+        border-radius: 2vw;
+        border-style: solid;
+    }
+    #selectMode{
+        display: none;
+    }
+    #selectPlane{
+        display: none;
+    }
+}
+
+
+
+/*on game*/
+#mouse{
+    width: 9vw;
+}
+
+.bullet{
+    width: 0.8vw;
+}
+@keyframes falling {
+    0%{
+        position: absolute;
+        top: 0vh;
+    }
+    100%{
+        position: absolute;
+        top: 100vh;
+    }
+}
+
+@keyframes shooting {
+    0%{
+        position: absolute;
+        top: 100vh;
+    }
+    100%{
+        position: absolute;
+        top: 0vh;
+    }
+}
+.rock7{
+    width: 2vw;
+}
+.rock8{
+    width: 5vw;
+}
+#mouse{
+    position: absolute;
+    width: 6vw;
+}
+
+#marginLeft{
+    height: 20vh;
+    width: 20vw;
+    position: absolute;
+    left: 0;
+    background-color: rgb(31, 36, 65);
+    border-radius: 1vw;
+    border-style: solid;
+    margin: 1vw;
+    line-height: 4vh;
+    text-align: center;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: none;
+}
+
+#planeDisplayText{
+    position: absolute;
+    line-height: 4vh;
+    width: 20vw;
+    text-align: center;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 9vh;
+}
+#groundBlood1{
+    height: 4vh;
+    width: 18vw;
+    position: absolute;
+    background-color: azure;
+    top: 5vh;
+    left: 1vw;
+   
+}
+#groundBlood{
+    height: 4vh;
+    width: 18vw;
+    position: absolute;
+    background-color: red;
+    top: 5vh;
+    left: 1vw;
+   
+}
+#planeBlood1{
+    height: 4vh;
+    width: 18vw;
+    position: absolute;
+    background-color: azure;
+    top: 13vh;
+    left: 1vw;
+   
+}
+#planeBlood{
+    height: 4vh;
+    width: 18vw;
+    position: absolute;
+    background-color: red;
+    top: 13vh;
+    left: 1vw;
+   
+}
+
+#marginRight{
+    position: absolute;
+    height: 10vh;
+    line-height: 10vh;
+    width: 10vw;
+    position: absolute;
+    right: 0;
+    background-color: rgb(71, 98, 148);
+    border-radius: 1vw;
+    border-style: solid;
+    margin: 1vw;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: none;
+}
+
+#gameover{
+    position: absolute;
+    width: 80vw;
+    transform: translateX(-50%);
+    top: 40vh;
+    left: 50vw;
+    animation: appear 1s ease-in;
+    display: none;
+}
+@keyframes appear {
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 80vw;
+    }
+}
+@keyframes appearPlayAgain {
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 15vw;
+    }
+}
+#playAgain{
+    position: absolute;
+    width: 15vw;
+    height: 10vh;
+    transform: translateX(-50%);
+    top: 70vh;
+    left: 50vw;
+    animation: appearPlayAgain 0.2s ease-in;
+    background-color: blueviolet;
+    text-align: center;
+    line-height: 10vh;
+    border-radius: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    border-style: solid;
+    display: none;
+
+}
+#playAgain:hover{
+    background-color: rgb(56, 19, 90);
+}
+
